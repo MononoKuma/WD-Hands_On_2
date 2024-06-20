@@ -4,23 +4,22 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
-  </a>
+  <a href="https://app.daily.dev/mononokuma">
+   <img src="https://api.daily.dev/devcards/v2/DMEySfkP0murZQ6MrL1WW.png?type=wide&r=rgz" width="652" alt="Aries's Dev Card"/>
+ </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Hands On 2</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  A compilation of Designs that will challenge me to create 5 Hero pages, 5 different static card styles, and 5 different animated card styles. In utilizing HTML, CSS, and JS.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=page=MononoKuma/WD-Hands_On_2)
 
 ---
 
@@ -57,20 +56,15 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+Description of the project in detail.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- The project is a multipage compilation of designs requiring the creation of 5 hero pages, 5 static card styles, and 5 animated card styles using HTML, CSS, and JavaScript. The purpose is to test knowledge acquired from past lessons in class. Key components include multiple pages and animations. CSS will be used for both design and animations, while JavaScript will be used specifically for creating animations. The project aims to challenge and enhance design and coding skills.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Animations
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -117,4 +111,10 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| W3Shools | HTML & CSS | https://www.w3schools.com |
+| GeeksforGeeks | HTML & CSS | https://www.geeksforgeeks.org |
+| Youtube | Video | https://www.youtube.com/channel/UCMHXMAeKkI6HXlPfLiYvo9g |
+| Ian Ramirez | Template | https://github.com/zyx-0314 |
+| Daily Dev | Readme Icon | https://daily.dev/ |
+| Google | Images & Icons | https://google.com/ |
+
