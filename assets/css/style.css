@@ -1,77 +1,204 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+  font-family: "Brose";
+  src: url("../fonts/Brose.ttf") format("truetype");
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  margin: 0;
   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2e2e2e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e;
+  z-index: 10;
+}
+
+.loader {
+  height: 60px;
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  transform-origin: bottom;
+}
+
+.loader::after {
+  background: radial-gradient(at 75% 15%, #fffb, #0000 35%),
+    radial-gradient(at 80% 40%, #0000, #0008),
+    radial-gradient(circle 5px, #fff 94%, #0000),
+    radial-gradient(circle 10px, #000 94%, #0000),
+    linear-gradient(#f93318 0 0) top / 100% calc(50% - 5px),
+    linear-gradient(#fff 0 0) bottom/100% calc(50% - 5px) #000;
+  background-repeat: no-repeat;
+  animation: l20 1s infinite cubic-bezier(0.5, 120, 0.5, -120);
+}
+
+.loader::before {
+  background: #ddd;
+  filter: blur(8px);
+  transform: scaleY(0.4) translate(-13px, 0px);
+}
+
+@keyframes l20 {
+  30%,
+  70% {
+    transform: rotate(0deg);
+  }
+
+  49.99% {
+    transform: rotate(0.2deg);
+  }
+
+  50% {
+    transform: rotate(-0.2deg);
+  }
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-  background-color: lightblue;
-  position: sticky;
+  padding: 20px 30px;
+  width: 100%;
+  position: absolute;
   top: 0;
-  opacity: 0.8;
-}
-
-header .logo img {
-  height: 10vh;
-  width: auto;
+  left: 0;
+  z-index: 1;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 48px;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 header nav ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: 1px solid white;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s;
 }
 
-.mainhub {
+header nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 80vh;
-  padding: 40px 20px;
-  text-align: center;
+  flex-direction: column;
+  font-weight: lighter;
+  overflow: hidden;
 }
 
-.hub {
-  width: 25%;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.hub h3 {
+.clock_date .date {
+  font-size: 1.5rem;
+  font-weight: bold;
   margin-bottom: 10px;
+  font-family: "Brose", Arial, sans-serif;
 }
 
-.hub p {
+.clock_date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.clock_date .clock {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  font-family: "Brose", Arial, sans-serif;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
   margin-bottom: 20px;
+  color: white;
+  font-family: "Brose", Arial, sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
-.hub img {
-  height: 150px;
-  margin-bottom: -10px;
+.title p {
+  font-size: 1.2rem;
+  font-weight: lighter;
 }
 
-.hub a {
-  display: inline-block;
-  padding: 10px 15px;
-  border: 3px solid black;
-  border-radius: 12px;
-  background-color: #fff;
-  color: black;
-  text-decoration: none;
+.title h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header nav ul li a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .clock_date .date {
+    font-size: 1.2rem;
+  }
+
+  .clock_date .clock {
+    font-size: 2rem;
+  }
+
+  .title h1 {
+    font-size: 1.8rem;
+  }
 }
