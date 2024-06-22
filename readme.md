@@ -139,7 +139,8 @@ WD-ProjectName
 |  |  |  └─ css
 |  |  |  |  └─ style.css
 |  |  |  └─ img
-|  |  |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |  |  |  └─ background.gif
+|  |  |  |  └─ pikachu.jpg
 |  |  |  └─ js
 |  |  |     └─ script.js
 |  |  └─ index.html
@@ -148,7 +149,9 @@ WD-ProjectName
 |     |  └─ css
 |     |  |  └─ style.css
 |     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|     |  |  └─ nsx.jpg
+|     |  |  └─ pikachu.jpg
+|     |  |  └─ profile.jpg
 |     |  └─ js
 |     |     └─ script.js
 |     └─ index.html
