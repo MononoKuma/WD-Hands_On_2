@@ -10,7 +10,7 @@
     <div id="loader" class="loader">
         <div class="spinner"></div>
     </div>
-
+    <img src="./assets/img/wallpaper.jpg" alt="wallpaper">
     <header>
         <nav> 
             <ul>
@@ -24,24 +24,24 @@
             </ul>
         </nav>
     </header>
-    
-    <main class="container">
-        <div class="background-container">
-            <img src="./assets/img/background.jpg" alt="background">
-        </div>
-        <div class="card">
-            <img src="https://i.redd.it/vv5d39v7hv891.jpg" alt="Card Image" class="card__image">
-            <div class="car-info">
-                <h2>Honda NSX (First Generation)</h2>
-            <ul>
-                <li><strong>Horsepower:</strong> 270 hp</li>
-                <li><strong>Top Speed:</strong> 168 mph (270 km/h)</li>
-                <li><strong>Weight:</strong> 1,350 kg (2,976 lbs)</li>
-                <li><strong>Acceleration (0-60 mph):</strong> 5.2 seconds</li>
-            </ul>
+    <div class="container">
+        <div class="audio-card">
+            <div class="audio-info">
+                <h2>Now Playing: <br><br> Golden Hour</h2> 
+                <p>Artist: Jvke</p>
+            </div>
+            <audio id="audio-player" src="./assets/audio/goldenhour.mp3"></audio>
+            <div class="audio-controls">
+                <button id="play-button">Play</button>
+                <button id="pause-button">Pause</button>
+                <button id="stop-button">Stop</button>
+            </div>
+            <div class="volume">
+                <p>Volume: </p>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
             </div>
         </div>
-    </main>
+    </div>
     <script src="./assets/js/scripts.js"></script>
 </body>
 </html>

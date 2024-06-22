@@ -7,7 +7,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #2e2e2e;
+  background: linear-gradient(to right, #141e30, #243b55);
   color: #fff;
   font-family: Arial, sans-serif;
   display: flex;
@@ -83,28 +83,9 @@ header nav ul li a:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 2rem;
-  padding-top: 80px;
-}
-
-.container .background-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-}
-
-.container .background-container img {
-  width: 100%;
-  height: 100%;
+img {
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -112,60 +93,54 @@ header nav ul li a:hover {
   z-index: -1;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 20px;
+.container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 400px;
-  z-index: 1;
+  width: 100vw;
+  height: 100vh;
 }
 
-.card__image {
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
-
-.card__content {
-  text-align: center;
-}
-
-.card__title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.card__description {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.car-info {
+.audio-card {
   background: rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
   padding: 20px;
-  margin-top: 20px;
-  max-width: 400px;
-  text-align: left;
+  border-radius: 10px;
+  text-align: center;
   color: white;
 }
 
-.car-info h2 {
-  margin-bottom: 15px;
+.audio-info {
+  margin-bottom: 20px;
 }
 
-.car-info ul {
-  list-style: none;
-  padding: 0;
+.audio-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.car-info ul li {
-  margin-bottom: 10px;
+.audio-controls button {
+  background: #42d778;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.car-info ul li strong {
-  color: #ffd700;
+.audio-controls button:hover {
+  background: #34b171;
+}
+
+#audio-player {
+  margin-top: 20px;
+  display: none;
+}
+
+#volume-slider {
+  width: 100%;
+  margin-top: 10px;
 }
