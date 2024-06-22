@@ -12,38 +12,6 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-}
-
-.loader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.spinner {
-  border: 8px solid rgba(255, 255, 255, 0.3);
-  border-top: 8px solid #fff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 header {
@@ -83,12 +51,611 @@ header nav ul li a:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 img {
-  width: 100vw;
-  height: 100vh;
   object-fit: cover;
-  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 30px 0px;
+}
+
+.card1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 80px;
+}
+
+.card1 .card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  z-index: 1;
+}
+
+.card1 .card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card1 .card .car-info {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 400px;
+  text-align: left;
+  color: white;
+}
+
+.card1 .card .car-info h2 {
+  margin-bottom: 15px;
+}
+
+.card1 .card .car-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card1 .card .car-info ul li {
+  margin-bottom: 10px;
+}
+
+.card1 .card .car-info ul li strong {
+  color: #ffd700;
+}
+
+.card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card2 .audio-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.card2 .audio-info {
+  margin-bottom: 20px;
+}
+
+.card2 .audio-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card2 .audio-controls button {
+  background: #42d778;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#audio-player {
+  margin-top: 20px;
+  display: none;
+}
+
+#volume-slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.card3 {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.card3 .project-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: -20px;
+}
+
+.card3 .project-title {
+  font-weight: 500;
+  font-size: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: black;
+}
+
+.card3 .lighter {
+  font-size: 0.9em;
+}
+
+.card3 .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card3 .tag {
+  font-weight: lighter;
+  color: grey;
+}
+
+.card3 .delete {
+  background-color: #b2b2fd;
+}
+
+.card3 .img {
+  position: relative;
+  top: -20px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.card3 .img img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card3 .card {
+  background-color: white;
+  color: black;
+  width: 300px;
+  max-height: 330px;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card4,
+.cardanimated4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card4 .card,
+.cardanimated4 .card {
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.time-text {
+  font-size: 48px;
+  margin: 0;
+}
+
+.time-sub-text {
+  font-size: 24px;
+  vertical-align: super;
+}
+
+.day-text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.moon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.cardanimated4 .card {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cardanimated4 .card:hover {
+  box-shadow: rgb(0, 0, 0) 5px 10px 50px, rgb(0, 0, 0) -5px 0px 250px;
+}
+
+.cardanimated4 .card:hover > .moon {
+  font-size: 23px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card5,
+.cardanimated5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.card5 .card,
+.cardanimated5 .card {
+  background-color: #ffe62d;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 400px;
+  color: black;
+}
+
+.pokemon-card {
+  text-align: center;
+}
+
+.card-header {
+  position: relative;
+}
+
+.pokemon-title {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 12px;
+  color: gray;
+}
+
+.pokemon-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.pokemon-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.pokemon-hp {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 14px;
+  color: red;
+}
+
+.card-info {
+  margin: 1rem 0;
+}
+
+.pokemon-desc {
+  font-size: 14px;
+  color: gray;
+}
+
+.card-body {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.pokemon-attack {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.attack-damage {
+  font-size: 14px;
+  color: red;
+}
+
+.card-footer {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.pokemon-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weakness,
+.resistance,
+.retreat-cost {
+  flex: 1;
+}
+
+.weakness-value,
+.resistance-value,
+.retreat-value {
+  font-weight: bold;
+}
+
+.pokemon-flavor {
+  font-size: 12px;
+  color: gray;
+  margin-top: 1rem;
+}
+
+.cardanimated5 .card:hover {
+  opacity: 0.4;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.cardanimated1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 80px;
+}
+
+.cardanimated1 .card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  z-index: 1;
+  transition: all ease-in-out 0.3s;
+}
+
+.cardanimated1 .card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.cardanimated1 .card .car-info {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 400px;
+  text-align: left;
+  color: white;
+}
+
+.cardanimated1 .card .car-info h2 {
+  margin-bottom: 15px;
+}
+
+.cardanimated1 .card .car-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cardanimated1 .card .car-info ul li {
+  margin-bottom: 10px;
+}
+
+.cardanimated1 .card .car-info ul li strong {
+  color: #ffd700;
+}
+
+.cardanimated1 .card:hover {
+  --lightness: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 15px whitesmoke, 0 0 30px rgba(255, 0, 255, 0.747),
+    0 0 45px #0ff, 0 0 60px #f0f, 0 0 75px #0ff;
+}
+
+.cardanimated2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cardanimated2 .audio-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.cardanimated2 .audio-info {
+  margin-bottom: 20px;
+}
+
+.cardanimated2 .audio-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardanimated2 .audio-controls button {
+  background: #42d778;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cardanimated2 .audio-controls button:hover {
+  background: white;
+  color: black;
+}
+
+#audio-player {
+  margin-top: 20px;
+  display: none;
+}
+
+#volume-slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.cardanimated3 {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.cardanimated3 .card {
+  background-color: white;
+  color: black;
+  width: 300px;
+  max-height: 330px;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.cardanimated3 .card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardanimated3 .img {
+  position: relative;
+  top: -20px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.cardanimated3 .img img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cardanimated3 .project-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: -20px;
+}
+
+.cardanimated3 .project-title {
+  font-weight: 500;
+  font-size: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: black;
+}
+
+.cardanimated3 .lighter {
+  font-size: 0.9em;
+}
+
+.cardanimated3 .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardanimated3 .tag {
+  font-weight: lighter;
+  color: grey;
+}
+
+.cardanimated3 .delete {
+  background-color: #b2b2fd;
+}
+
+.cardanimated3 .card:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 0 80px whitesmoke,
+    inset 20px 0 80px rgba(255, 0, 255, 0.747), inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff,
+    -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+
+.cardanimated3 .card:before,
+.cardanimated3 .card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+}
+
+.cardanimated3 .card:hover:before {
+  transform: translateX(-100%);
+}
+
+.cardanimated3 .card:hover:after {
+  transform: translateX(100%);
 }

@@ -93,7 +93,7 @@ img {
   z-index: -1;
 }
 
-.card {
+.card4 {
   width: 280px;
   height: 150px;
   background: rgb(17, 4, 134);
@@ -108,7 +108,7 @@ img {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
-  margin: 150px auto;
+  margin: 70px 10px;
 }
 
 .card:hover {

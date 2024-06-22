@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Card Gallery</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -21,5 +21,266 @@
             </ul>
         </nav>
     </header>
+    <br><br>
+    <section class="divider">
+        <h1>Design 1</h1>
+    </section>
+    <div class="card1">
+        <div class="card">
+            <img src="./assets/img/nsx.jpg" alt="Image">
+            <div class="car-info">
+                <h2>Honda NSX (First Generation)</h2>
+            <ul>
+                <li><strong>Horsepower:</strong> 270 hp</li>
+                <li><strong>Top Speed:</strong> 168 mph (270 km/h)</li>
+                <li><strong>Weight:</strong> 1,350 kg (2,976 lbs)</li>
+                <li><strong>Acceleration (0-60 mph):</strong> 5.2 seconds</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="divider">
+        <h1>Design 2</h1>
+    </section>
+
+    <div class="card2">
+        <div class="audio-card">
+            <div class="audio-info">
+                <h2>Now Playing: <br><br> Golden Hour</h2> 
+                <p>Artist: Jvke</p>
+            </div>
+            <audio id="audio-player" src="./assets/audio/goldenhour.mp3"></audio>
+            <div class="audio-controls">
+                <button id="play-button">Play</button>
+                <button id="pause-button">Pause</button>
+                <button id="stop-button">Stop</button>
+            </div>
+            <div class="volume">
+                <p>Volume: </p>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+        </div>
+    </div>
+
+    <section class="divider">
+        <h1>Design 3</h1>
+    </section>
+    <br>
+    <div class="card3">
+        <div class="card">
+            <div class="img">
+                <img src="./assets/img/profile.jpg" alt="Image">
+            </div>
+    
+            <div class="project-info">
+                <div class="flex">
+                    <div class="project-title">MononoKuma</div>
+                    <span class="tag">TB01</span>
+                </div>
+                <span class="lighter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae voluptas ullam aut incidunt minima.</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <section class="divider">
+        <h1>Design 4</h1>
+    </section>
+
+    <div class="card4">
+        <div class="card">
+            <p class="time-text"><span id="time">11:11</span><span id="ampm" class="time-sub-text">PM</span></p>
+            <p id="day" class="day-text">Wednesday, June 15th</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" stroke-width="0" fill="currentColor" stroke="currentColor" class="moon">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+            </svg>
+        </div>
+    </div>
+    
+
+    <script src="./assets/js/scripts.js"></script>
+    <section class="divider">
+        <h1>Design 5</h1>
+    </section>
+
+    <div class="card5">
+        <div class="card">
+            <div class="pokemon-card">
+                <div class="card-header">
+                    <span class="pokemon-title">Basic Pokémon</span>
+                    <h1 class="pokemon-name">Pikachu</h1>
+                    <img src="./assets/img/pikachu.jpg" alt="image" class="pokemon-image">
+                    <span class="pokemon-hp"><span class="hp-value">40</span> HP</span>
+                </div>
+                
+                <div class="card-info">
+                    <p class="pokemon-desc">Mouse Pokémon. Length: 1' 4", Weight: 13 lbs.</p>
+                </div>
+                <div class="card-body">
+                    <div class="pokemon-attack">
+                        <h2>Gnaw</h2>
+                        <span class="attack-damage">10</span>
+                    </div>
+                    <div class="pokemon-attack">
+                        <h2>Thunder Jolt</h2>
+                        <p>Flip a coin. If tails, Pikachu does 10 damage to itself.</p>
+                        <span class="attack-damage">30</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="pokemon-stats">
+                        <div class="weakness">
+                            <p>Weakness</p>
+                            <span class="weakness-value">Ground</span>
+                        </div>
+                        <div class="resistance">
+                            <p>Resistance</p>
+                            <span class="resistance-value">None</span>
+                        </div>
+                        <div class="retreat-cost">
+                            <p>Retreat Cost</p>
+                            <span class="retreat-value">None</span>
+                        </div>
+                    </div>
+                    <p class="pokemon-flavor">When several of these Pokémon gather, their electricity can cause lightning storms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <h1>Animated Header Design</h1>
+    <br><br>
+
+    <section class="divider">
+        <h1>Design 1</h1>
+    </section>
+
+    <div class="cardanimated1">
+        <div class="card">
+            <img src="./assets/img/nsx.jpg" alt="Image">
+            <div class="car-info">
+                <h2>Honda NSX (First Generation)</h2>
+            <ul>
+                <li><strong>Horsepower:</strong> 270 hp</li>
+                <li><strong>Top Speed:</strong> 168 mph (270 km/h)</li>
+                <li><strong>Weight:</strong> 1,350 kg (2,976 lbs)</li>
+                <li><strong>Acceleration (0-60 mph):</strong> 5.2 seconds</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="divider">
+        <h1>Design 2</h1>
+    </section>
+
+    <div class="cardanimated2">
+        <div class="audio-card">
+            <div class="audio-info">
+                <h2>Now Playing: <br><br> Golden Hour</h2> 
+                <p>Artist: Jvke</p>
+            </div>
+            <audio id="audio-player" src="./assets/audio/goldenhour.mp3"></audio>
+            <div class="audio-controls">
+                <button id="play-button">Play</button>
+                <button id="pause-button">Pause</button>
+                <button id="stop-button">Stop</button>
+            </div>
+            <div class="volume">
+                <p>Volume: </p>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+        </div>
+    </div>
+
+    <section class="divider">
+        <h1>Design 3</h1>
+    </section>
+    <br>
+    <div class="cardanimated3">
+        <div class="card">
+            <div class="img">
+                <img src="./assets/img/profile.jpg" alt="Image">
+            </div>
+    
+            <div class="project-info">
+                <div class="flex">
+                    <div class="project-title">MononoKuma</div>
+                    <span class="tag">TB01</span>
+                </div>
+                <span class="lighter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae voluptas ullam aut incidunt minima.</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="divider">
+        <h1>Design 4</h1>
+    </section>
+
+    <div class="cardanimated4">
+        <div class="card">
+            <p class="time-text"><span id="time">11:11</span><span id="ampm" class="time-sub-text">PM</span></p>
+            <p id="day" class="day-text">Wednesday, June 15th</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" stroke-width="0" fill="currentColor" stroke="currentColor" class="moon">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+            </svg>
+        </div>
+    </div>
+    
+
+    <script src="./assets/js/scripts.js"></script>
+
+    <section class="divider">
+        <h1>Design 5</h1>
+    </section>
+
+    <div class="cardanimated5">
+        <div class="card">
+            <div class="pokemon-card">
+                <div class="card-header">
+                    <span class="pokemon-title">Basic Pokémon</span>
+                    <h1 class="pokemon-name">Pikachu</h1>
+                    <img src="./assets/img/pikachu.jpg" alt="image" class="pokemon-image">
+                    <span class="pokemon-hp"><span class="hp-value">40</span> HP</span>
+                </div>
+                
+                <div class="card-info">
+                    <p class="pokemon-desc">Mouse Pokémon. Length: 1' 4", Weight: 13 lbs.</p>
+                </div>
+                <div class="card-body">
+                    <div class="pokemon-attack">
+                        <h2>Gnaw</h2>
+                        <span class="attack-damage">10</span>
+                    </div>
+                    <div class="pokemon-attack">
+                        <h2>Thunder Jolt</h2>
+                        <p>Flip a coin. If tails, Pikachu does 10 damage to itself.</p>
+                        <span class="attack-damage">30</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="pokemon-stats">
+                        <div class="weakness">
+                            <p>Weakness</p>
+                            <span class="weakness-value">Ground</span>
+                        </div>
+                        <div class="resistance">
+                            <p>Resistance</p>
+                            <span class="resistance-value">None</span>
+                        </div>
+                        <div class="retreat-cost">
+                            <p>Retreat Cost</p>
+                            <span class="retreat-value">None</span>
+                        </div>
+                    </div>
+                    <p class="pokemon-flavor">When several of these Pokémon gather, their electricity can cause lightning storms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

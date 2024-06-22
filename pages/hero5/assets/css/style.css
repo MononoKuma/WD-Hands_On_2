@@ -28,24 +28,6 @@ body {
   z-index: 9999;
 }
 
-.spinner {
-  border: 8px solid rgba(255, 255, 255, 0.3);
-  border-top: 8px solid #fff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -101,46 +83,116 @@ img {
   height: 100vh;
 }
 
-.audio-card {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 20px;
+.pokemon-card {
+  width: 270px;
+  border: 2px solid #000;
   border-radius: 10px;
-  text-align: center;
-  color: white;
+  background-color: #f9e79f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  font-size: 14px;
+  color: #000;
+  padding: 10px;
+  position: relative;
+  left: 25vw;
 }
 
-.audio-info {
-  margin-bottom: 20px;
-}
-
-.audio-controls {
+.card-header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  padding: 5px;
+}
+
+.pokemon-title {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.pokemon-name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pokemon-hp {
+  font-size: 16px;
+  color: #d00;
+}
+
+.hp-value {
+  font-size: 18px;
+}
+
+.pokemon-image {
   justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid #000;
+  margin: 5px 0;
+  top: -145px;
+  left: 12px;
+  z-index: 1;
 }
 
-.audio-controls button {
-  background: #42d778;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  transition: background 0.3s;
+.card-info {
+  font-size: 12px;
+  margin: 5px 0;
 }
 
-.audio-controls button:hover {
-  background: #34b171;
+.pokemon-desc {
+  margin: 0;
 }
 
-#audio-player {
-  margin-top: 20px;
-  display: none;
+.card-body {
+  padding: 5px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin: 5px 0;
 }
 
-#volume-slider {
-  width: 100%;
-  margin-top: 10px;
+.pokemon-attack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.pokemon-attack h2 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.attack-damage {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-footer {
+  padding: 5px 0;
+}
+
+.pokemon-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weakness,
+.resistance,
+.retreat-cost {
+  text-align: center;
+  font-size: 12px;
+}
+
+.weakness-value,
+.resistance-value,
+.retreat-value {
+  font-weight: bold;
+}
+
+.pokemon-flavor {
+  font-size: 10px;
+  margin: 5px 0;
 }
