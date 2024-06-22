@@ -89,16 +89,18 @@ WD-ProjectName
 |   └─ css
 |   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
+|   |   └─ wallpaper.jpg
 |   └─ js
-|       └─ script.js
+|   |   └─ script.js
+|   └─ fonts
+|       └─ Brose.ttf
 └─ pages
 |  └─ hero1
 |  |  └─ assets
 |  |  |  └─ css
 |  |  |  |  └─ style.css
 |  |  |  └─ img
-|  |  |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |  |  |  └─ background.jpg
 |  |  |  └─ js
 |  |  |     └─ script.js
 |  |  └─ index.html
@@ -107,7 +109,9 @@ WD-ProjectName
 |  |  |  └─ css
 |  |  |  |  └─ style.css
 |  |  |  └─ img
-|  |  |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |  |  |  └─ wallpaper.jpg
+|  |  |  └─ audio
+|  |  |  |  └─ goldenhour.mp3
 |  |  |  └─ js
 |  |  |     └─ script.js
 |  |  └─ index.html
@@ -116,7 +120,8 @@ WD-ProjectName
 |  |  |  └─ css
 |  |  |  |  └─ style.css
 |  |  |  └─ img
-|  |  |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |  |  |  └─ profile.jpg
+|  |  |  |  └─ walllpaper.gif
 |  |  |  └─ js
 |  |  |     └─ script.js
 |  |  └─ index.html
@@ -125,7 +130,7 @@ WD-ProjectName
 |  |  |  └─ css
 |  |  |  |  └─ style.css
 |  |  |  └─ img
-|  |  |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |  |  |  └─ wallpaper.gif
 |  |  |  └─ js
 |  |  |     └─ script.js
 |  |  └─ index.html
