@@ -158,6 +158,7 @@ WD-ProjectName
 |-|-|-|
 | W3Shools | HTML & CSS | https://www.w3schools.com |
 | GeeksforGeeks | HTML & CSS | https://www.geeksforgeeks.org |
+| Youtube | JS | https://www.youtube.com |
 | Ian Ramirez | Template | https://github.com/zyx-0314 |
 | Daily Dev | Readme Icon | https://daily.dev/ |
 | Google | Images & Icons | https://google.com/ |
